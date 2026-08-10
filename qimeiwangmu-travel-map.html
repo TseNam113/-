@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#e9f2ef">
+  <meta name="description" content="拉萨至成都 G317 川藏北线 8 日自驾路线、真实地形地图与手机定位导航。">
+  <meta property="og:title" content="Qimei Wangmu 旅游地图">
+  <meta property="og:description" content="拉萨至成都 · G317 川藏北线 · 8 日自驾路线">
+  <meta property="og:type" content="website">
+  <title>Qimei Wangmu 旅游地图</title>
+  <style>
+    :root{--bg:#e9f2ef;--paper:#f8faf8;--ink:#123b41;--muted:#557377;--teal:#176a73;--deep:#0f4650;--gold:#c88612;--line:#aec6c0;--white:#fff;--shadow:0 24px 70px rgba(18,59,65,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1240px,calc(100% - 48px));margin:auto}
+    header{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:15px max(24px,5vw);border-bottom:1px solid rgba(80,120,116,.2);background:rgba(233,242,239,.9);backdrop-filter:blur(16px)}
+    .brand{display:flex;align-items:baseline;gap:11px;font-weight:800}.brand b{font-size:1.25rem}.brand span{color:var(--muted);font-size:.85rem}.nav{display:flex;align-items:center;gap:24px;color:var(--muted);font-size:.86rem;font-weight:700}.nav-map{padding:9px 16px;border-radius:999px;background:var(--gold);color:#fff}
+    .hero{position:relative;overflow:hidden;padding:clamp(90px,12vw,160px) 0 95px}.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(70,120,116,.18);border-radius:47% 53% 62% 38%;transform:rotate(-16deg)}.hero:before{width:540px;height:380px;right:-130px;top:60px}.hero:after{width:420px;height:300px;right:-60px;top:110px}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr 320px;gap:70px;align-items:center}.eyebrow{margin:0 0 22px;color:var(--gold);font-size:.76rem;font-weight:800;letter-spacing:.18em}.hero h1{display:flex;gap:30px;align-items:baseline;margin:0;font-size:clamp(4rem,8.3vw,8.2rem);font-weight:700;letter-spacing:-.075em;line-height:.94}.hero h1 small{font-size:.52em;letter-spacing:-.06em}.route-title{display:flex;align-items:center;gap:18px;margin:38px 0 18px;color:var(--teal);font-size:clamp(1.4rem,2.3vw,2rem);font-weight:800}.route-title i{width:64px;height:2px;background:var(--gold)}.lede{max-width:660px;margin:0;color:var(--muted);font-size:1.05rem;line-height:1.9}.stats{display:grid;grid-template-columns:1fr 1fr;gap:25px 16px}.stats div{padding-top:15px;border-top:1px solid var(--line)}.stats strong{display:block;color:var(--gold);font-size:3.8rem;line-height:1}.stats span{color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.16em}.stats p{grid-column:1/-1;margin:0;color:var(--muted);font-size:.88rem;line-height:1.8}
+    section{padding:100px 0}.paper{background:var(--paper)}.heading{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:44px}.heading h2{margin:0;font-size:clamp(2.3rem,4.4vw,4rem);font-weight:650;letter-spacing:-.055em}.heading>p{max-width:420px;margin:0 0 7px;color:var(--muted);font-size:.95rem;line-height:1.75;text-align:right}
+    .map-frame{margin:0;border:1px solid rgba(80,125,118,.35);background:#dce8e4;box-shadow:var(--shadow);overflow:hidden}.map-frame img{display:block;width:100%;height:auto;min-height:360px;object-fit:cover}.map-frame figcaption{display:flex;justify-content:space-between;gap:20px;padding:19px 24px;border-top:1px solid rgba(80,125,118,.28);font-size:.82rem;font-weight:700}.map-frame small{color:var(--muted);font-weight:500}
+    .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:30px}.facts p{margin:0;color:var(--muted);font-size:.85rem;line-height:1.75}.facts b{display:block;margin-bottom:5px;color:var(--gold);font-size:.7rem;letter-spacing:.14em}.amap-panel{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:42px;padding:22px 25px;border:1px solid rgba(23,106,115,.25);background:var(--bg)}.amap-copy{display:flex;align-items:center;gap:17px}.amap-badge{display:grid;place-items:center;width:54px;height:54px;flex:none;border-radius:50%;background:var(--teal);color:#fff;font-size:.68rem;font-weight:900}.amap-copy strong{display:block;margin-bottom:5px}.amap-copy p{margin:0;color:var(--muted);font-size:.78rem}.gold-link{display:flex;align-items:center;gap:18px;color:var(--teal);font-size:.86rem;font-weight:800}.gold-link span{color:var(--gold);font-size:1.1rem}
+    .days{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}.day{display:grid;grid-template-columns:68px 1fr;gap:20px;min-height:230px;padding:34px 34px 32px 0;border-bottom:1px solid var(--line)}.day:nth-child(odd){padding-right:44px;border-right:1px solid var(--line)}.day:nth-child(even){padding-left:44px}.day-no{color:var(--gold);font-size:.95rem;font-weight:900;letter-spacing:.08em}.day-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px}.day h3{margin:0;font-size:clamp(1.3rem,2vw,1.65rem);letter-spacing:-.035em}.day-head span{flex:none;color:var(--muted);font-size:.79rem}.day p{margin:20px 0;color:var(--muted);font-size:.96rem;line-height:1.85}.nav-btn{display:inline-flex;align-items:center;gap:9px;padding:0;border:0;background:transparent;color:var(--teal);font-size:.82rem;font-weight:800;cursor:pointer}.dot{width:9px;height:9px;border:2px solid var(--teal);border-radius:50%;box-shadow:0 0 0 3px rgba(23,106,115,.12)}.nav-btn b{color:var(--gold);font-size:1rem}
+    .highlights{background:var(--deep);color:#edf5f3}.highlights .heading>p{color:#abc3bf}.cards{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(220,235,231,.25);border-bottom:1px solid rgba(220,235,231,.25)}.card{min-height:370px;padding:32px 34px;border-right:1px solid rgba(220,235,231,.25)}.card:last-child{border:0}.card>span{color:var(--gold);font-size:.78rem;font-weight:900}.card>p{margin:78px 0 9px;color:#abc3bf;font-size:.76rem;letter-spacing:.14em}.card h3{margin:0;font-size:clamp(2rem,3vw,3rem);letter-spacing:-.045em}.card i{display:block;width:38px;height:2px;margin:25px 0;background:var(--gold)}.card small{color:#c9d9d6;font-size:.9rem;line-height:1.9}
+    .note{display:grid;grid-template-columns:1fr 1fr;gap:70px;background:#dce9e5}.note p{margin:0 0 22px;color:var(--muted);font-size:1rem;line-height:2}.note .privacy{color:var(--teal);font-size:.8rem;line-height:1.75}.download{display:inline-flex;align-items:center;gap:26px;padding-bottom:8px;border-bottom:1px solid var(--teal);color:var(--teal);font-weight:800}.download span{color:var(--gold)}
+    footer{display:flex;justify-content:space-between;gap:36px;padding:38px max(24px,6vw);background:var(--ink);color:#c7d8d5;font-size:.76rem}footer strong{color:#fff;letter-spacing:.1em}footer span{margin-left:20px}footer p{margin:0}
+    .toast{position:fixed;left:50%;bottom:24px;z-index:50;transform:translate(-50%,130%);max-width:calc(100% - 32px);padding:12px 18px;border-radius:999px;background:rgba(15,70,80,.96);color:#fff;font-size:.84rem;box-shadow:0 12px 35px rgba(0,0,0,.22);transition:transform .25s ease}.toast.show{transform:translate(-50%,0)}
+    @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.stats{max-width:420px}.heading{align-items:start;flex-direction:column}.heading>p{text-align:left}.facts,.cards{grid-template-columns:1fr}.card{min-height:290px;border-right:0;border-bottom:1px solid rgba(220,235,231,.25)}.note{grid-template-columns:1fr}.amap-panel{align-items:flex-start;flex-direction:column}}
+    @media(max-width:720px){.wrap{width:calc(100% - 36px)}header{padding:13px 18px}.brand span,.nav a:not(.nav-map){display:none}.nav-map{padding:8px 13px}.hero{padding:78px 0 68px}.hero h1{flex-direction:column;gap:5px;font-size:clamp(3.5rem,19vw,5.4rem)}.hero h1 small{font-size:.56em}.lede{font-size:.98rem}.stats strong{font-size:3rem}section{padding:72px 0}.map-frame{width:calc(100% + 36px);margin-left:-18px;border-left:0;border-right:0}.map-frame img{width:150%;max-width:none;transform:translateX(-17%)}.map-frame figcaption{flex-direction:column;padding:16px 18px}.facts{gap:18px}.amap-panel{padding:19px}.amap-copy{align-items:flex-start}.gold-link{width:100%;justify-content:space-between;padding-top:16px;border-top:1px solid rgba(23,106,115,.2)}.days{grid-template-columns:1fr}.day,.day:nth-child(odd),.day:nth-child(even){grid-template-columns:52px 1fr;min-height:0;padding:28px 0;border-right:0}.day-head{align-items:flex-start;flex-direction:column;gap:7px}.card{padding:28px 12px 35px}.card>p{margin-top:55px}.note{gap:34px}footer,footer div{display:flex;flex-direction:column}footer span{margin:7px 0 0}footer p{line-height:1.7}}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="#top"><b>G317</b><span>Qimei Wangmu 旅游地图</span></a>
+    <nav class="nav"><a href="#route">路线地图</a><a href="#itinerary">8 日行程</a><a href="#highlights">沿线亮点</a><a class="nav-map" id="topAmap" target="_blank" rel="noreferrer">高德地图</a></nav>
+  </header>
+
+  <main id="top">
+    <div class="hero"><div class="wrap hero-grid"><div><p class="eyebrow">TIBETAN PLATEAU · ROAD TRIP 2026</p><h1><span>G317</span><small>川藏北线</small></h1><p class="route-title">拉萨 <i></i> 成都</p><p class="lede">穿越藏北高原，沿着更安静、更具人文厚度的川藏北线，从拉萨一路驶向成都。</p></div><div class="stats"><div><strong>8</strong><span>DAYS</span></div><div><strong>2365</strong><span>KM</span></div><p>平均海拔更高 · 游客相对更少 · 人文景观密集</p></div></div></div>
+
+    <section class="paper" id="route"><div class="wrap"><div class="heading"><div><p class="eyebrow">THE COMPLETE ROUTE</p><h2>一张图看完整主线</h2></div><p>真实经纬度节点 · 高程地形晕渲 · 行政区边界</p></div>
+      <figure class="map-frame"><img src="assets/g317-terrain-map.png" onerror="this.onerror=null;this.src='https://g317-north-tibet-roadtrip.patnawaraphi.chatgpt.site/assets/g317-terrain-map.png'" alt="G317 川藏北线拉萨至成都八日自驾地形路线地图"><figcaption><span>拉萨 → 那曲 → 巴青 → 丁青 → 昌都 → 德格 → 甘孜 → 马尔康 → 成都</span><small>路线节点基于真实经纬度绘制</small></figcaption></figure>
+      <div class="facts"><p><b>ROAD</b>主线以柏油路为主，出发前仍需核验实时路况。</p><p><b>ALTITUDE</b>那曲海拔较高，不建议在抵达当天熬夜赶路。</p><p><b>BRANCH</b>道孚位于 G350 支线，绕行建议增加 1 天。</p></div>
+      <div class="amap-panel"><div class="amap-copy"><span class="amap-badge">AMAP</span><div><strong>在高德地图中查看沿线节点</strong><p>手机端优先唤起高德 App；未安装时转至高德网页版。</p></div></div><a class="gold-link" id="routeAmap" target="_blank" rel="noreferrer">打开完整节点地图 <span>↗</span></a></div>
+    </div></section>
+
+    <section id="itinerary"><div class="wrap"><div class="heading"><div><p class="eyebrow">8-DAY ITINERARY</p><h2>把高原留给白天</h2></div><p>以常规自驾节奏拆分，避免高反状态下熬夜赶路。</p></div><div class="days" id="dayGrid"></div></div></section>
+
+    <section class="highlights" id="highlights"><div class="wrap"><div class="heading"><div><p class="eyebrow">CULTURE · LANDSCAPE</p><h2>北线最值得慢下来的地方</h2></div><p>少一点景点清单，多一点真正进入高原腹地的时间。</p></div><div class="cards"><article class="card"><span>01</span><p>天空之城</p><h3>孜珠寺</h3><i></i><small>位于丁青县外的高山寺院。建议把它作为第三天唯一的重点绕行，避免压缩高原行车时间。</small></article><article class="card"><span>02</span><p>藏文化腹地</p><h3>德格印经院</h3><i></i><small>北线人文核心节点。第五天抵达后安排完整参观时间，比匆忙打卡更值得。</small></article><article class="card"><span>03</span><p>雪山与湖泊</p><h3>玉隆拉措</h3><i></i><small>德格至甘孜途中最具代表性的自然景观，湖泊、冰川遗迹与雀儿山共同构成高原层次。</small></article></div></div></section>
+
+    <section class="note"><div class="wrap" style="display:contents"><div><p class="eyebrow">BEFORE DEPARTURE</p><div class="heading" style="margin:0"><h2>高原行车，<br>不以赶路为目标</h2></div></div><div><p>第一晚住在那曲时重点观察高原反应；昌都是北线较舒适的休整节点，马尔康海拔进一步下降。每天尽量在天黑前抵达，并为天气与道路变化保留余量。</p><p class="privacy">定位说明：本站不读取或保存你的定位。只有点击“定位并导航”后，浏览器才会申请定位，并将坐标交给高德地图规划路线。</p><a class="download" href="assets/g317-poster.png" download>保存完整路线海报 <span>↓</span></a></div></div></section>
+  </main>
+
+  <footer><div><strong>G317 · NORTH TIBET ROUTE</strong><span>拉萨 — 成都</span></div><p>行程时间仅供规划参考，实际以天气、交通管制及个人高原适应情况为准。</p></footer>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script>
+    const days=[
+      ["01","拉萨 — 那曲","340 km · 约 3.5 h","沿 G109 向北，穿越藏北草原，在那曲接入 G317。",92.004154,31.400617,"那曲"],
+      ["02","那曲 — 巴青","330 km · 约 7 h","经索县进入高原牧区，沿途是开阔草场与藏式村落。",94.056689,31.918132,"巴青"],
+      ["03","巴青 — 丁青","250 km · 约 6 h","抵达丁青，预留时间绕行孜珠寺，远眺天空之城。",95.584943,31.408981,"丁青"],
+      ["04","丁青 — 昌都","245 km · 约 6 h","翻越高原垭口，经类乌齐抵达昌都，探访强巴林寺。",97.180341,31.128054,"昌都"],
+      ["05","昌都 — 德格","330 km · 约 7 h","跨越金沙江进入四川，抵达藏文化重镇德格。",98.580871,31.814209,"德格"],
+      ["06","德格 — 甘孜","200 km · 约 4.5 h","沿雀儿山一线前往甘孜，途中游览玉隆拉措。",99.995366,31.625172,"甘孜"],
+      ["07","甘孜 — 马尔康","320 km · 约 6.5 h","沿 G317 经炉霍、翁达抵达马尔康；道孚需走 G350 支线。",102.222569,31.898349,"马尔康"],
+      ["08","马尔康 — 成都","350 km · 约 5 h","经汶川、都江堰逐步下高原，抵达成都完成旅程。",104.06918,30.664254,"成都"]
+    ];
+    const markers=[[91.101568,29.6473,"拉萨"],...days.map(d=>[d[4],d[5],d[6]])];
+    const routeUrl=`https://uri.amap.com/marker?markers=${encodeURIComponent(markers.map(m=>m.join(",")).join("|"))}&src=${encodeURIComponent("Qimei Wangmu旅游地图")}&callnative=1`;
+    document.querySelectorAll("#topAmap,#routeAmap").forEach(a=>a.href=routeUrl);
+    const grid=document.getElementById("dayGrid");
+    days.forEach(d=>{const el=document.createElement("article");el.className="day";el.innerHTML=`<div class="day-no">D${d[0]}</div><div><div class="day-head"><h3>${d[1]}</h3><span>${d[2]}</span></div><p>${d[3]}</p><button class="nav-btn" type="button"><span class="dot"></span>定位并导航至${d[6]}<b>↗</b></button></div>`;el.querySelector("button").addEventListener("click",()=>navigate(d));grid.appendChild(el)});
+    function amapNav(d,from=""){const to=encodeURIComponent(`${d[4]},${d[5]},${d[6]}`);const src=encodeURIComponent("Qimei Wangmu旅游地图");window.location.href=`https://uri.amap.com/navigation?from=${from}&to=${to}&mode=car&policy=0&src=${src}&callnative=1`}
+    function toast(msg){const el=document.getElementById("toast");el.textContent=msg;el.classList.add("show");setTimeout(()=>el.classList.remove("show"),2600)}
+    function navigate(d){if(!navigator.geolocation){toast("当前浏览器不支持定位，将直接打开高德地图");return amapNav(d)}toast("正在获取当前位置…");navigator.geolocation.getCurrentPosition(p=>{const from=encodeURIComponent(`${p.coords.longitude},${p.coords.latitude},我的位置`);amapNav(d,from)},()=>{toast("未获得定位权限，将由高德地图确定起点");setTimeout(()=>amapNav(d),700)},{enableHighAccuracy:true,timeout:8000,maximumAge:60000})}
+  </script>
+</body>
+</html>
